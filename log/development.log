@@ -821,3 +821,11 @@ Processing by ArtistsController#show as HTML
   Parameters: {"id"=>"1"}
   Rendered artists/show.html.erb within layouts/application (1.2ms)
 Completed 200 OK in 205ms (Views: 204.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/songs/new" for 65.93.175.191 at 2018-07-16 18:15:53 +0000
+Cannot render console from 65.93.175.191! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SongsController#new as HTML
+  Rendered songs/new.html.erb within layouts/application (31.9ms)
+Completed 200 OK in 239ms (Views: 231.5ms | ActiveRecord: 0.4ms)
