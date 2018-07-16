@@ -772,3 +772,12 @@ Processing by ArtistsController#show as HTML
   Parameters: {"id"=>"2"}
   Rendered artists/show.html.erb within layouts/application (1.1ms)
 Completed 200 OK in 219ms (Views: 218.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/artists/2" for 65.93.175.191 at 2018-07-16 18:15:02 +0000
+Cannot render console from 65.93.175.191! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendered artists/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 212ms (Views: 211.9ms | ActiveRecord: 0.0ms)
