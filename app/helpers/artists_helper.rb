@@ -1,5 +1,5 @@
 module ArtistsHelper
-  def dddisplay_artist(song)
+  def dddddisplay_artist(song)
     if song.artist
      link_to song.artist.name, song.artist
    #    link_to "ddddddd", song.artist
