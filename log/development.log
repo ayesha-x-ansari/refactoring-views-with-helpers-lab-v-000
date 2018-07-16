@@ -938,3 +938,16 @@ Cannot render console from 65.93.175.191! Allowed networks: 127.0.0.1, ::1, 127.
 Processing by SongsController#new as HTML
   Rendered songs/new.html.erb within layouts/application (34.6ms)
 Completed 200 OK in 251ms (Views: 242.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/songs" for 65.93.175.191 at 2018-07-16 18:26:07 +0000
+Cannot render console from 65.93.175.191! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vcKA0674RPY21quoyGqsQOGzpFl8zxV26BVMnSpwQ1yrh5sn0oQ+fPWYGXS4wWtnxzCPI9AMupfJxC+fkAgmxw==", "song"=>{"title"=>"Beat it2", "artist_name"=>""}, "commit"=>"Create Song"}
+  [1m[35mArtist Load (0.3ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT 1  [["name", ""]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "songs" ("title", "artist_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Beat it2"], ["artist_id", 4], ["created_at", "2018-07-16 18:26:08.222754"], ["updated_at", "2018-07-16 18:26:08.222754"]]
+  [1m[36m (11.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://159.203.187.180:47570/songs/4
+Completed 302 Found in 54ms (ActiveRecord: 13.1ms)
